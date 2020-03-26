@@ -46,7 +46,7 @@ This app will be only to return items that have a QR code.
 
 * [Login]
 * [Register-User signs up or logs in]
-   * Upon Download/Reopening of the application, the user is prompted to log in to gain access to the app.
+   * Upon Download/Reopening of the application, the user is prompted to log in to manage thier own QR codes.
 * [Camera QR Scanner]
    * Lets people scan the QR code found on the item
    * 

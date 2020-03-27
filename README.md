@@ -82,6 +82,8 @@ This app will be only to return items that have a QR code.
 
 ## Wireframes
 
+![Test Image 6]("https://github.com/LosTresAmigos/ScannerApp/blob/master/Wireframe%20Final.pdf)
+
 <img src="https://github.com/LosTresAmigos/ScannerApp/blob/master/Wireframe%20Final.pdf" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups

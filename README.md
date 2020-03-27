@@ -47,11 +47,6 @@ my student ID and use it when needed
 * As a driver i would like to have my wallet returned so that I can have a form of ID to show when I get pulled over 
 
 
-**Optional Nice-to-have Stories**
-
-* [fill in your required user stories here]
-* ...
-
 ### 2. Screen Archetypes
 
 * [Login]

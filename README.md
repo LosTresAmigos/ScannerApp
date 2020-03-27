@@ -92,7 +92,7 @@ my student ID and use it when needed
 
 ![image]("https://github.com/LosTresAmigos/ScannerApp/files/4391594/Wireframe.Final.pdf)
 
-<img src="https://github.com/LosTresAmigos/ScannerApp/files/4391594/Wireframe.Final.pdf" width=1000>
+<img src="https://github.com/LosTresAmigos/ScannerApp/files/4391594/Wireframe.Final.pdf" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 

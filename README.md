@@ -90,7 +90,7 @@ my student ID and use it when needed
 
 ## Wireframes
 
-![image]("https://github.com/LosTresAmigos/ScannerApp/blob/master/Wireframe%20Final.pdf")
+![image](https://github.com/LosTresAmigos/ScannerApp/blob/master/Wireframe.Final.pdf)
 
 <img src= "https://github.com/LosTresAmigos/ScannerApp/files/4391594/Wireframe.Final.pdf" width=600>
 

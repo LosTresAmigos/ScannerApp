@@ -89,12 +89,8 @@ my student ID and use it when needed
    
 
 ## Wireframes
-
-![image](https://github.com/LosTresAmigos/ScannerApp/blob/master/Wireframe%20Final.pdf)
-
-<img src= "https://github.com/LosTresAmigos/ScannerApp/files/4391594/Wireframe.Final.pdf" width=600>
-
 ### [BONUS] Digital Wireframes & Mockups
+![Wireframe Final-1](https://user-images.githubusercontent.com/59372920/77725228-2a22b180-6fb2-11ea-9b4f-a7429a9ab5c6.png)
 
 ### [BONUS] Interactive Prototype
 

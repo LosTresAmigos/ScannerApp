@@ -67,18 +67,19 @@ This app will be only to return items that have a QR code.
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* [Profile]
+* [Scan]
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* [Log In Screen]
+   * [Log In]
+   * [Create Account]
+   * [Scan Now]
+* [Sign Up Screen -> Lets user enter their information]
+* [Information Return Screen -> Returns users information after QR scan]
+* [Scan Now Screen -> Lets users scan qr code even if they dont have an account]
+   
 
 ## Wireframes
 

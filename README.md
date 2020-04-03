@@ -117,6 +117,10 @@ my student ID and use it when needed
          ```
       - (Create/POST) Create a new key for a user
       - (Delete) Delete an existing key
+         ```swift
+            if 'key' in myDict:
+            del myDict['key']
+         ```
       - (Update/PUT) Change information for a user
          ```swift
             if let currentUser = PFUser.currentUser(){

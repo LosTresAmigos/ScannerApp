@@ -92,7 +92,13 @@ my student ID and use it when needed
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------ |
+   | author        | Pointer to User| image autor |
+   | primaryphone         | Number     | Number to call or to message owner of device |
+   | message       | String   | Information on how to contact owner |
+   | backupPhone | Number   | number if the primary phone number does not work  |
+   | QR Codes    | Number   | id  |
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]

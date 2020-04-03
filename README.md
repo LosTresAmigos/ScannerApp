@@ -102,17 +102,16 @@ my student ID and use it when needed
 ### Networking
 #### List of network requests by screen
    - Profile Screen
-      - (Read/GET) Query all posts where user is author
+      - (Read/GET) Query all information where key matches its author
          ```swift
          let query = PFQuery(className:"User")
          query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+         query.findObjectsInBackground { (users: [PFObject]?, error: Error?) in
             if let error = error { 
                print(error.localizedDescription)
-            } else if let posts = posts {
-               print("Successfully retrieved \(posts.count) posts.")
-           // TODO: Do something with posts...
+            } else if let key = key {
+               print("Successfully retrieved \(users.count) users.")
+           // TODO: Do something with users...
             }
          }
          ```

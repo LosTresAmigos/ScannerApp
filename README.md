@@ -149,4 +149,3 @@ my student ID and use it when needed
             class func delete(with groupIdentifier: String, 
             completion: ((Error?) -> Void)? = nil)
          ```
-      - (Read/GET) Query logged in user object

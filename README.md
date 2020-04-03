@@ -118,6 +118,13 @@ my student ID and use it when needed
       - (Create/POST) Create a new key for a user
       - (Delete) Delete an existing key
       - (Update/PUT) Change information for a user
+         ```swift
+            if let currentUser = PFUser.currentUser(){
+              currentUser["Username"] = "John Smith"
+              //set other fields the same way....
+               currentUser.saveInBackground()
+              }
+         ```
       - (Delete) Delete existing information
          ```swift
             class func delete(with groupIdentifier: String, 

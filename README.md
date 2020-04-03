@@ -92,7 +92,6 @@ my student ID and use it when needed
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
- # User
    | Property      | Type     | Description |
    | ------------- | -------- | ------------ |
    | author        | Pointer to User| image autor |

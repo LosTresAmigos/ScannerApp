@@ -92,6 +92,7 @@ my student ID and use it when needed
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
+ # User
    | Property      | Type     | Description |
    | ------------- | -------- | ------------ |
    | author        | Pointer to User| image autor |
@@ -100,6 +101,30 @@ my student ID and use it when needed
    | backupPhone | Number   | number if the primary phone number does not work  |
    | QR Codes    | Number   | id  |
 ### Networking
-- [Add list of network requests by screen ]
+#### List of network requests by screen
+   - Profile Screen
+      - (Read/GET) Query all posts where user is author
+         ```swift
+         let query = PFQuery(className:"User")
+         query.whereKey("author", equalTo: currentUser)
+         query.order(byDescending: "createdAt")
+         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+            if let error = error { 
+               print(error.localizedDescription)
+            } else if let posts = posts {
+               print("Successfully retrieved \(posts.count) posts.")
+           // TODO: Do something with posts...
+            }
+         }
+         ```
+      - (Create/POST) Create a new key for a user
+      - (Delete) Delete an existing key
+      - (Update/PUT) Change information for a user
+      - (Delete) Delete existing information
+   - Create Post Screen
+      - (Create/POST) Create a new post object
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]

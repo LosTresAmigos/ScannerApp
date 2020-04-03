@@ -119,6 +119,10 @@ my student ID and use it when needed
       - (Delete) Delete an existing key
       - (Update/PUT) Change information for a user
       - (Delete) Delete existing information
+         ```swift
+            class func delete(with groupIdentifier: String, 
+            completion: ((Error?) -> Void)? = nil)
+         ```
 
    - Profile Screen
       - (Read/GET) Query logged in user object

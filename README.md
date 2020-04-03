@@ -119,18 +119,7 @@ my student ID and use it when needed
       - (Delete) Delete an existing key
       - (Update/PUT) Change information for a user
       - (Delete) Delete existing information
-   - Create Post Screen
-      - (Create/POST) Create a new post object
-              if (!messageView.text.isEmpty){
-            TwitterAPICaller.client?.postInfo(infoString: messageView.text, success: {
-                self.dismiss(animated: true, completion: nil)
-            }, failure: { (error) in
-                print("Error Posting text on Code \(error)")
-                self.dismiss(animated: true, completion: nil)
-            })
-        }else {
-            self.dismiss(animated: true, completion: nil)
-        }
+
    - Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image

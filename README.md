@@ -130,9 +130,6 @@ my student ID and use it when needed
             class func delete(with groupIdentifier: String, 
             completion: ((Error?) -> Void)? = nil)
          ```
-
-   - Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+

@@ -116,6 +116,16 @@ my student ID and use it when needed
          }
          ```
       - (Create/POST) Create a new key for a user
+      ```swift
+            guard let key = ref.child("posts").childByAutoId().key else { return }
+                let post = ["uid": userID,
+                            "author": username,
+                            "title": title,
+                            "body": body]
+                let childUpdates = ["/posts/\(key)": post,
+                                    "/user-posts/\(userID)/\(key)/": post]
+                ref.updateChildValues(childUpdates)
+        ```
       - (Delete) Delete an existing key
          ```swift
             if 'key' in myDict:

@@ -117,13 +117,10 @@ my student ID and use it when needed
          ```
       - (Create/POST) Create a new key for a user
       ```swift
-            guard let key = ref.child("posts").childByAutoId().key else { return }
-                let post = ["uid": userID,
-                            "author": username,
-                            "title": title,
-                            "body": body]
-                let childUpdates = ["/posts/\(key)": post,
-                                    "/user-posts/\(userID)/\(key)/": post]
+            guard let key = ref.child("userId").childByAutoId().key else { return }
+                let post = ["qrCode": qrCode]
+                let childUpdates = ["/userId/\(key)": post,
+                                    "/user-userId/\(qrCode)/\(key)/": post]
                 ref.updateChildValues(childUpdates)
         ```
       - (Delete) Delete an existing key
@@ -149,3 +146,4 @@ my student ID and use it when needed
             class func delete(with groupIdentifier: String, 
             completion: ((Error?) -> Void)? = nil)
          ```
+      - (Read/GET) Query logged in user object

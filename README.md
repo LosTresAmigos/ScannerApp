@@ -123,11 +123,16 @@ my student ID and use it when needed
          ```
       - (Update/PUT) Change information for a user
          ```swift
-            if let currentUser = PFUser.currentUser(){
-              currentUser["Username"] = "John Smith"
-              //set other fields the same way....
-               currentUser.saveInBackground()
-              }
+           var user = firebase.auth().currentUser;
+
+            user.updateProfile({
+              displayName: "Jane Q. User",
+              photoURL: "https://example.com/jane-q-user/profile.jpg"
+            }).then(function() {
+              // Update successful.
+            }).catch(function(error) {
+              // An error happened.
+            });
          ```
       - (Delete) Delete existing information
          ```swift

@@ -15,6 +15,10 @@
 		CF058075243ECF5A0003D07F /* ScannerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF058074243ECF5A0003D07F /* ScannerAppTests.swift */; };
 		CF058080243ECF5A0003D07F /* ScannerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF05807F243ECF5A0003D07F /* ScannerAppUITests.swift */; };
 		CF5D763B243FD9BA0060B871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5D763A243FD9BA0060B871 /* Main.storyboard */; };
+		CF89F7DD2442566C009E1444 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89F7DC2442566C009E1444 /* ProfileViewController.swift */; };
+		CF89F7DF2442568E009E1444 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89F7DE2442568E009E1444 /* SignUpViewController.swift */; };
+		CF89F7E1244256A4009E1444 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89F7E0244256A4009E1444 /* InfoViewController.swift */; };
+		CF89F7E324425A2F009E1444 /* ScanNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89F7E224425A2F009E1444 /* ScanNowViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		CF05807F243ECF5A0003D07F /* ScannerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerAppUITests.swift; sourceTree = "<group>"; };
 		CF058081243ECF5A0003D07F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF5D763A243FD9BA0060B871 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		CF89F7DC2442566C009E1444 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CF89F7DE2442568E009E1444 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CF89F7E0244256A4009E1444 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		CF89F7E224425A2F009E1444 /* ScanNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanNowViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,10 @@
 				CF058066243ECF590003D07F /* Assets.xcassets */,
 				CF058068243ECF590003D07F /* LaunchScreen.storyboard */,
 				CF05806B243ECF590003D07F /* Info.plist */,
+				CF89F7DC2442566C009E1444 /* ProfileViewController.swift */,
+				CF89F7DE2442568E009E1444 /* SignUpViewController.swift */,
+				CF89F7E0244256A4009E1444 /* InfoViewController.swift */,
+				CF89F7E224425A2F009E1444 /* ScanNowViewController.swift */,
 			);
 			path = ScannerApp;
 			sourceTree = "<group>";
@@ -261,7 +273,11 @@
 			files = (
 				CF058062243ECF540003D07F /* ViewController.swift in Sources */,
 				CF05805E243ECF540003D07F /* AppDelegate.swift in Sources */,
+				CF89F7DD2442566C009E1444 /* ProfileViewController.swift in Sources */,
 				CF058060243ECF540003D07F /* SceneDelegate.swift in Sources */,
+				CF89F7E1244256A4009E1444 /* InfoViewController.swift in Sources */,
+				CF89F7E324425A2F009E1444 /* ScanNowViewController.swift in Sources */,
+				CF89F7DF2442568E009E1444 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

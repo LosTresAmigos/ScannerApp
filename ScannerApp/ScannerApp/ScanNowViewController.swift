@@ -10,6 +10,10 @@ import UIKit
 
 class ScanNowViewController: UIViewController {
 
+    @IBOutlet weak var codeImage: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

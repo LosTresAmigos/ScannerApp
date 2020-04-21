@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		CF89F7E1244256A4009E1444 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89F7E0244256A4009E1444 /* InfoViewController.swift */; };
 		CF89F7E324425A2F009E1444 /* ScanNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89F7E224425A2F009E1444 /* ScanNowViewController.swift */; };
 		CF9EE111244926A2005CDF57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9EE10F244926A2005CDF57 /* Main.storyboard */; };
+		CFB6BBF3244FA88D00098881 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFB6BBF2244FA88D00098881 /* GoogleService-Info.plist */; };
 		EB1942D19541200F604589E2 /* Pods_ScannerApp_ScannerAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855C967DE51366D81922ED7F /* Pods_ScannerApp_ScannerAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		CF89F7E0244256A4009E1444 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		CF89F7E224425A2F009E1444 /* ScanNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanNowViewController.swift; sourceTree = "<group>"; };
 		CF9EE110244926A2005CDF57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFB6BBF2244FA88D00098881 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D8E2E86CEEA6B5AD6224FF18 /* Pods-ScannerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerApp.release.xcconfig"; path = "Target Support Files/Pods-ScannerApp/Pods-ScannerApp.release.xcconfig"; sourceTree = "<group>"; };
 		F9D58C555E89D0A01E7704C5 /* Pods-ScannerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScannerApp.debug.xcconfig"; path = "Target Support Files/Pods-ScannerApp/Pods-ScannerApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +111,6 @@
 				62C08C58988CA363493E137F /* Pods-ScannerAppTests.debug.xcconfig */,
 				4E006182E6C1D5BD36BA2E31 /* Pods-ScannerAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,6 +144,7 @@
 				CF05805F243ECF540003D07F /* SceneDelegate.swift */,
 				CF058061243ECF540003D07F /* ViewController.swift */,
 				CF058066243ECF590003D07F /* Assets.xcassets */,
+				CFB6BBF2244FA88D00098881 /* GoogleService-Info.plist */,
 				CF058068243ECF590003D07F /* LaunchScreen.storyboard */,
 				CF05806B243ECF590003D07F /* Info.plist */,
 				CF89F7DC2442566C009E1444 /* ProfileViewController.swift */,
@@ -291,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF9EE111244926A2005CDF57 /* Main.storyboard in Resources */,
+				CFB6BBF3244FA88D00098881 /* GoogleService-Info.plist in Resources */,
 				CF05806A243ECF590003D07F /* LaunchScreen.storyboard in Resources */,
 				CF058067243ECF590003D07F /* Assets.xcassets in Resources */,
 			);

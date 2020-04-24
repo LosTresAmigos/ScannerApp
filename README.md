@@ -159,4 +159,4 @@ my student ID and use it when needed
 
 
 ## Milestone 3 GIF
-![Wireframe Final-1](https://media.giphy.com/media/Y4VhvA5Cn6itQkkPwX/giphy.gif)
+![Wireframe Final-1](https://gph.is/g/aXWWABA)

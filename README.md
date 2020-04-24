@@ -161,4 +161,4 @@ my student ID and use it when needed
 
 ## Milestone 3 GIF
 
-![Wireframe Final-1](https://giphy.com/gifs/MZct1CLJ77HqBWhzNZ/html5)
+![Wireframe Final-1](https://media.giphy.com/media/MZct1CLJ77HqBWhzNZ/giphy.gif)

@@ -155,11 +155,11 @@ my student ID and use it when needed
 ![Wireframe Final-1](https://media.giphy.com/media/Lnnk1lgQrqbsJmgTkw/giphy.gif)
 
 ## Milestone 2 GIF
-![Wireframe Final-1](https://media.giphy.com/media/Sqr2aAmxdFaYQUBYut/giphy.gif)
+![Wireframe Final-1](https://gph.is/g/ZdddB3o)
 
 
 ## Milestone 3 GIF
 
 
 
-![Wireframe Final-2](https://media.giphy.com/media/MZct1CLJ77HqBWhzNZ/giphy.gif)
+![Wireframe Final-1](https://media.giphy.com/media/Sqr2aAmxdFaYQUBYut/giphy.gif)

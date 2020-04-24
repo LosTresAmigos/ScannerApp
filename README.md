@@ -155,11 +155,8 @@ my student ID and use it when needed
 ![Wireframe Final-1](https://media.giphy.com/media/Lnnk1lgQrqbsJmgTkw/giphy.gif)
 
 ## Milestone 2 GIF
-![Wireframe Final-1](https://gph.is/g/ZdddB3o)
+![Wireframe Final-1](https://media.giphy.com/media/Sqr2aAmxdFaYQUBYut/giphy.gif)
 
 
 ## Milestone 3 GIF
-
-
-
-![Wireframe Final-1](https://media.giphy.com/media/Sqr2aAmxdFaYQUBYut/giphy.gif)
+<iframe src="https://giphy.com/embed/MZct1CLJ77HqBWhzNZ" width="238" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/MZct1CLJ77HqBWhzNZ">via GIPHY</a></p>

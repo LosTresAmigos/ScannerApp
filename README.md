@@ -156,3 +156,8 @@ my student ID and use it when needed
 
 ## Milestone 2 GIF
 ![Wireframe Final-1](https://media.giphy.com/media/Sqr2aAmxdFaYQUBYut/giphy.gif)
+
+
+## Milestone 3 GIF
+Test Camera on Phone Reading message on QR Code
+![Wireframe Final-1](https://media.giphy.com/media/Y4VhvA5Cn6itQkkPwX/giphy.gif)

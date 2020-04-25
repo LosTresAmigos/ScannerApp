@@ -1,4 +1,20 @@
-/
+//
+//  ScanNowViewController.swift
+//  ScannerApp
+//
+//  Created by Raul Flores on 4/11/20.
+//  Copyright © 2020 LosTresAmigos. All rights reserved.
+//
+
+import UIKit
+import AVFoundation
+
+class ScanNowViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCapturePhotoCaptureDelegate, AVCaptureMetadataOutputObjectsDelegate {
+     @IBOutlet weak var previewView: UIView!
+     @IBOutlet weak var lblOutput: UILabel!
+        
+    @IBAction func Scan(_ sender: Any) {
+    
     }
     var imageOrientation: AVCaptureVideoOrientation?
         var captureSession: AVCaptureSession?

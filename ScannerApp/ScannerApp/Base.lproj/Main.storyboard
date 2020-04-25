@@ -173,6 +173,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Edit Contact"/>
+                                <connections>
+                                    <segue destination="dcj-tW-d11" kind="show" id="fFv-uh-gHu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60G-Ff-sgx">
                                 <rect key="frame" x="30" y="512" width="315" height="40"/>
@@ -184,6 +187,9 @@
                                 <state key="normal" title="Edit Information">
                                     <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="MSw-wt-99k" kind="show" id="Flv-ca-GOS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiI-HX-X02">
                                 <rect key="frame" x="166" y="153" width="42" height="32"/>
@@ -214,6 +220,20 @@
                                     <constraint firstAttribute="height" constant="35" id="bbk-b7-EJT"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTu-Kr-49z">
+                                <rect key="frame" x="30" y="352" width="315" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xth-Gx-gk1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Add &amp; Remove Keys">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="k09-MD-7lV" kind="show" id="yRg-TD-hDW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -588,10 +608,10 @@
             </objects>
             <point key="canvasLocation" x="1916" y="-62.518740629685162"/>
         </scene>
-        <!--ADD/REMOVE View Controller-->
+        <!--AddRemoveViewController-->
         <scene sceneID="2f6-fQ-DI0">
             <objects>
-                <viewController title="ADD/REMOVE View Controller" id="k09-MD-7lV" sceneMemberID="viewController">
+                <viewController title="AddRemoveViewController" id="k09-MD-7lV" customClass="AddRemoveViewController" customModule="ScannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2MX-IT-Zeo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -631,6 +651,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R3i-bT-DaY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="RJm-uJ-ljo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="755-J8-58H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -639,7 +660,7 @@
         <!--Edit VIew Controller-->
         <scene sceneID="Slc-0P-Xxp">
             <objects>
-                <viewController title="Edit VIew Controller" id="dcj-tW-d11" sceneMemberID="viewController">
+                <viewController title="Edit VIew Controller" id="dcj-tW-d11" customClass="EditInfoViewController" customModule="ScannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dJL-aI-TJO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -716,6 +737,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vW5-yg-wzA"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oy5-nu-Zt8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dwi-Hn-0vL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -724,7 +746,7 @@
         <!--Update View Controller-->
         <scene sceneID="f4P-Rv-79L">
             <objects>
-                <viewController title="Update View Controller" id="MSw-wt-99k" sceneMemberID="viewController">
+                <viewController title="Update View Controller" id="MSw-wt-99k" customClass="UpdateInfoViewController" customModule="ScannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5kk-ez-PNG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -801,6 +823,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FdR-NM-K7j"/>
                     </view>
+                    <navigationItem key="navigationItem" id="y6n-qF-zzk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YLH-w3-rJn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

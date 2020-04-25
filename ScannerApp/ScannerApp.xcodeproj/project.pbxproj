@@ -63,6 +63,7 @@
 		CF05807B243ECF5A0003D07F /* ScannerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScannerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF05807F243ECF5A0003D07F /* ScannerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerAppUITests.swift; sourceTree = "<group>"; };
 		CF058081243ECF5A0003D07F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF09AB1124525AA600FD2C41 /* ScannerAppRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScannerAppRelease.entitlements; sourceTree = "<group>"; };
 		CF89F7DC2442566C009E1444 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CF89F7DE2442568E009E1444 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CF89F7E0244256A4009E1444 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +140,7 @@
 		CF05805C243ECF540003D07F /* ScannerApp */ = {
 			isa = PBXGroup;
 			children = (
+				CF09AB1124525AA600FD2C41 /* ScannerAppRelease.entitlements */,
 				CF9EE10F244926A2005CDF57 /* Main.storyboard */,
 				CF05805D243ECF540003D07F /* AppDelegate.swift */,
 				CF05805F243ECF540003D07F /* SceneDelegate.swift */,
@@ -604,7 +606,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SU2F6GB84;
 				INFOPLIST_FILE = ScannerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -612,7 +616,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LosTresAmigos.ScannerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -621,8 +625,11 @@
 			baseConfigurationReference = D8E2E86CEEA6B5AD6224FF18 /* Pods-ScannerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ScannerApp/ScannerAppRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SU2F6GB84;
 				INFOPLIST_FILE = ScannerApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,7 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LosTresAmigos.ScannerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Firebase
 
 class ScanNowViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCapturePhotoCaptureDelegate, AVCaptureMetadataOutputObjectsDelegate {
      @IBOutlet weak var previewView: UIView!
@@ -108,6 +109,13 @@ class ScanNowViewController: UIViewController, UIImagePickerControllerDelegate, 
                 if let outputString = metadataObj.stringValue {
                     DispatchQueue.main.async {
                         print(outputString)
+
+                        let numcode = Int(outputString)
+                        
+                        let db = Firestore.firestore()
+                        
+                        let newdocument = db.collection("code").document()
+                        newdocument.setData(["code":numcode,"id":newdocument.documentID])
                         //self.lblOutput.text = outputString
                         
                     }

@@ -10,6 +10,17 @@ import UIKit
 
 class EditInfoViewController: UIViewController {
 
+    
+    @IBOutlet weak var firstNameField: UITextField!
+    
+    
+    @IBOutlet weak var lastNameField: UITextField!
+    
+    
+    @IBOutlet weak var emailField: UITextField!
+    
+    
+    @IBOutlet weak var confirmEmailField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 

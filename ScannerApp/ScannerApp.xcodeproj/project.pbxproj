@@ -206,6 +206,7 @@
 				CF058057243ECF540003D07F /* Frameworks */,
 				CF058058243ECF540003D07F /* Resources */,
 				5187CA93E969CE73AE3542DD /* [CP] Embed Pods Frameworks */,
+				D5DFA69812C78E12D33EB098 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +245,7 @@
 				CF058078243ECF5A0003D07F /* Frameworks */,
 				CF058079243ECF5A0003D07F /* Resources */,
 				523C6BC270DFA73F5981DEB3 /* [CP] Embed Pods Frameworks */,
+				B6B16B2FC3A0E9228CEED59A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -425,6 +427,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B16B2FC3A0E9228CEED59A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScannerApp-ScannerAppUITests/Pods-ScannerApp-ScannerAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScannerApp-ScannerAppUITests/Pods-ScannerApp-ScannerAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScannerApp-ScannerAppUITests/Pods-ScannerApp-ScannerAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5DFA69812C78E12D33EB098 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScannerApp/Pods-ScannerApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScannerApp/Pods-ScannerApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScannerApp/Pods-ScannerApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -618,14 +654,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2SU2F6GB84;
+				DEVELOPMENT_TEAM = CCUL67GAAX;
 				INFOPLIST_FILE = ScannerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LosTresAmigos.ScannerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LosTresAmigos.ScannerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -639,14 +675,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ScannerApp/ScannerAppRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2SU2F6GB84;
+				DEVELOPMENT_TEAM = CCUL67GAAX;
 				INFOPLIST_FILE = ScannerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LosTresAmigos.ScannerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LosTresAmigos.ScannerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

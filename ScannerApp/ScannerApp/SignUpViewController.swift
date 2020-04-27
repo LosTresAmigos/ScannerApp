@@ -7,24 +7,17 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
-
-    @IBOutlet weak var firstnameField: UITextField!
-    
-    @IBOutlet weak var lastnameField: UITextField!
-    
-    
-    @IBOutlet weak var emailField: UITextField!
-    
-    @IBOutlet weak var confirmField: UITextField!
-    
-    @IBOutlet weak var passwordField: UITextField!
-    
-    @IBOutlet weak var confirmpassField: UITextField!
-    
-    @IBOutlet weak var createbutton: UIButton!
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var lastLameField: UITextField!
+    @IBOutlet weak var primaryContactName: UITextField!
+    @IBOutlet weak var primaryContactPhone: UITextField!
+    @IBOutlet weak var secondaryContactName: UITextField!
+    @IBOutlet weak var secondaryContactPhone: UITextField!
     
     
     override func viewDidLoad() {
@@ -33,7 +26,24 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func createAccountTapped(_ sender: Any) {
+        let firstName = firstNameField.text!
+        let lastName = lastLameField.text!
+        let primaryName = primaryContactName.text!
+        let primaryPhone = primaryContactPhone.text!
+        let secondaryName = secondaryContactName.text!
+        let secondaryPhone = secondaryContactPhone.text!
+        let db = Firestore.firestore()
+        let userID = Auth.auth().currentUser!.uid
+        
+        let newDocument = db.collection("user").document()
+        newDocument.setData(["First Name": firstName, "Last Name": lastName, "Primary Name": primaryName,"Primary Phone": primaryPhone, "Secondary Name": secondaryName,"Secondary Phone": secondaryPhone, "id":newDocument.documentID,"userID": userID  ])
+                
+        performSegue(withIdentifier: "goProfile", sender: self)
 
+    }
+    
+    
     /*
     // MARK: - Navigation
 

@@ -117,7 +117,7 @@ class ScanNowViewController: UIViewController, UIImagePickerControllerDelegate, 
                         let db = Firestore.firestore()
                         
                         let newdocument = db.collection("code").document()
-                        newdocument.setData(["code":numcode,"Document Id":newdocument.documentID, "User Id": userID])
+                        newdocument.setData(["code":numcode!,"Document Id":newdocument.documentID, "User Id": userID])
                         //self.lblOutput.text = outputString
                         
                     }

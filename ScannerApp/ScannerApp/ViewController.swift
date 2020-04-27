@@ -8,6 +8,8 @@
 
 import UIKit
 import FirebaseUI
+import FirebaseAuth
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -68,8 +70,24 @@ class ViewController: UIViewController {
                  }
                  
                  // authDataResult?.user.uid
+                let db = Firestore.firestore()
+                let docRef = db.collection("collection").document("Name")
+                let check = 2
+                docRef.getDocument { (document, error) in
+                    if document!.exists {
+                         let check = 1
+                    }
+                    else {
+                        let check = 0
+                    }
+                    if check == 0{
+                        self.performSegue(withIdentifier: "goSetUp", sender: self)
+                    }
+                    else {
+                        self.performSegue(withIdentifier: "goHome", sender: self)
+                    }
                  
-                 performSegue(withIdentifier: "goSetUp", sender: self)
              }
+            }
 }
 

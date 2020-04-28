@@ -16,6 +16,18 @@ class AddRemoveViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+     
+     
+
+     //let userID = Auth.auth().currentUser!.uid
+
+     
+    // let db = Firestore.firestore()
+     
+     //let newdocument = db.collection("code").document()
+     //newdocument.setData(["code":numcode!,"Document Id":newdocument.documentID, "User Id": userID])
+     //self.lblOutput.text = outputString
 
     /*
     // MARK: - Navigation

@@ -23,7 +23,7 @@ class InfoViewController: UIViewController{
     override func viewDidLoad() {
     super.viewDidLoad()
         let db = Firestore.firestore()
-        db.collection("user").whereField("QRCode", isEqualTo: num)
+        db.collection("user").whereField("QRCode", arrayContains: num)
             .getDocuments() { (querySnapshot, err) in
                 if let err = err {
                     print("Error getting documents: \(err)")

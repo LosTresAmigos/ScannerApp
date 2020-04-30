@@ -12,6 +12,27 @@ import Firebase
 class AddRemoveViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCapturePhotoCaptureDelegate, AVCaptureMetadataOutputObjectsDelegate {
 
     @IBOutlet weak var previewView: UIImageView!
+    
+    
+    @IBAction func addButton(_ sender: Any) {
+        let db = Firestore.firestore()
+        let userID = Auth.auth().currentUser!.uid
+               
+        let docRef = db.collection("user").document(userID)
+        docRef.updateData([
+                   "QRCode": FieldValue.arrayUnion([code])
+               ])
+    }
+    
+    @IBAction func removeButton(_ sender: Any) {
+        let db = Firestore.firestore()
+        let userID = Auth.auth().currentUser!.uid
+        let docRef = db.collection("user").document(userID)
+        docRef.updateData([
+            "QRCode": FieldValue.arrayRemove([code])
+        ])
+        
+    }
     var imageOrientation: AVCaptureVideoOrientation?
     var captureSession: AVCaptureSession?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?

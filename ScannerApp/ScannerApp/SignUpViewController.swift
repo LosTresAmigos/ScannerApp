@@ -13,7 +13,7 @@ import FirebaseAuth
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var firstNameField: UITextField!
-    @IBOutlet weak var lastLameField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var primaryContactName: UITextField!
     @IBOutlet weak var primaryContactPhone: UITextField!
     @IBOutlet weak var secondaryContactName: UITextField!
@@ -26,9 +26,10 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func createAccountTapped(_ sender: Any) {
         let firstName = firstNameField.text!
-        let lastName = lastLameField.text!
+        let lastName = lastNameField.text!
         let primaryName = primaryContactName.text!
         let primaryPhone = primaryContactPhone.text!
         let secondaryName = secondaryContactName.text!

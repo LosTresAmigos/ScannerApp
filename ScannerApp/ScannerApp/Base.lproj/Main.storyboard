@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0O-iV-Wb6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0O-iV-Wb6">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -639,10 +639,10 @@
             </objects>
             <point key="canvasLocation" x="1489" y="1986"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="N78-Nv-inW">
             <objects>
-                <viewController id="vWS-7f-hJx" sceneMemberID="viewController">
+                <viewController id="vWS-7f-hJx" customClass="SignUpViewController" customModule="ScannerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kf6-G0-1e8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -653,6 +653,9 @@
                                     <constraint firstAttribute="height" constant="40" id="yai-8t-vvD"/>
                                 </constraints>
                                 <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="createAccountTapped:" destination="vWS-7f-hJx" eventType="touchUpInside" id="Ez5-uM-6x9"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Secondary Contact Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wKD-Yk-m72">
                                 <rect key="frame" x="30" y="512" width="315" height="40"/>
@@ -742,6 +745,15 @@
                         <viewLayoutGuide key="safeArea" id="Q2W-9e-7bk"/>
                     </view>
                     <navigationItem key="navigationItem" id="LmB-GK-tCC"/>
+                    <connections>
+                        <outlet property="firstNameField" destination="zfA-FS-fEI" id="rif-pz-Wc2"/>
+                        <outlet property="lastNameField" destination="G8z-Ss-cPi" id="bFN-1G-EQP"/>
+                        <outlet property="primaryContactName" destination="PoL-7L-Al7" id="yd6-X9-Btw"/>
+                        <outlet property="primaryContactPhone" destination="sV4-ck-HPF" id="kjo-ai-4D4"/>
+                        <outlet property="secondaryContactName" destination="wKD-Yk-m72" id="hQu-Lg-BjB"/>
+                        <outlet property="secondaryContactPhone" destination="wKD-Yk-m72" id="iLW-dD-Sfj"/>
+                        <segue destination="Nq4-Lx-XQG" kind="show" identifier="goProfile" id="TG3-Wl-in2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOU-Yf-3aU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -768,9 +780,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
-        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="qrcode" catalog="system" width="128" height="114"/>
-        <image name="qrcode.viewfinder" catalog="system" width="128" height="114"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
+        <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="qrcode" catalog="system" width="64" height="56"/>
+        <image name="qrcode.viewfinder" catalog="system" width="64" height="56"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="TG3-Wl-in2"/>
+    </inferredMetricsTieBreakers>
 </document>

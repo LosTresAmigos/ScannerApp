@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tHu-z6-f0M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tHu-z6-f0M">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -262,31 +262,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Scanner Find" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-0U-lfg">
-                                <rect key="frame" x="30" y="277" width="315" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanner Find" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTM-0U-lfg">
+                                <rect key="frame" x="30" y="317" width="315" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="L8w-FY-Ke8"/>
+                                    <constraint firstAttribute="height" constant="70" id="9uK-Eh-pUS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D8-Ir-Ee5">
-                                <rect key="frame" x="30" y="562" width="315" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5G-RQ-hXz">
+                                <rect key="frame" x="30" y="417" width="315" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="Ei6-qg-MEu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Sign In/Sign Up"/>
-                                <connections>
-                                    <action selector="loginTapped:" destination="tHu-z6-f0M" eventType="touchUpInside" id="QMy-VR-UnB"/>
-                                    <segue destination="vWS-7f-hJx" kind="show" identifier="goSetUp" id="Tro-5s-ocX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5G-RQ-hXz">
-                                <rect key="frame" x="30" y="394" width="315" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="K6d-nw-wex"/>
+                                    <constraint firstAttribute="height" constant="45" id="ZMA-MQ-Ny3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Scan Now">
@@ -296,14 +284,30 @@
                                     <segue destination="Ikp-jo-s8C" kind="show" id="I5l-Gk-p2Z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D8-Ir-Ee5">
+                                <rect key="frame" x="30" y="592" width="315" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="IPs-JB-e6e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Sign In/Sign Up"/>
+                                <connections>
+                                    <action selector="loginTapped:" destination="tHu-z6-f0M" eventType="touchUpInside" id="QMy-VR-UnB"/>
+                                    <segue destination="vWS-7f-hJx" kind="show" identifier="goSetUp" id="Tro-5s-ocX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="YMM-At-Fd5" firstAttribute="trailing" secondItem="0D8-Ir-Ee5" secondAttribute="trailing" constant="30" id="Bmd-AI-CYv"/>
-                            <constraint firstItem="0D8-Ir-Ee5" firstAttribute="leading" secondItem="YMM-At-Fd5" secondAttribute="leading" constant="30" id="E5K-ae-dWe"/>
-                            <constraint firstItem="XTM-0U-lfg" firstAttribute="leading" secondItem="YMM-At-Fd5" secondAttribute="leading" constant="30" id="WO3-14-tyi"/>
-                            <constraint firstItem="YMM-At-Fd5" firstAttribute="bottom" secondItem="0D8-Ir-Ee5" secondAttribute="bottom" constant="60" id="o6s-Jo-GXe"/>
-                            <constraint firstItem="YMM-At-Fd5" firstAttribute="trailing" secondItem="XTM-0U-lfg" secondAttribute="trailing" constant="30" id="tzn-EZ-EEl"/>
+                            <constraint firstItem="M5G-RQ-hXz" firstAttribute="leading" secondItem="YMM-At-Fd5" secondAttribute="leading" constant="30" id="8yC-Rm-Gau"/>
+                            <constraint firstItem="XTM-0U-lfg" firstAttribute="leading" secondItem="YMM-At-Fd5" secondAttribute="leading" constant="30" id="9d9-co-NG0"/>
+                            <constraint firstItem="YMM-At-Fd5" firstAttribute="trailing" secondItem="M5G-RQ-hXz" secondAttribute="trailing" constant="30" id="AOM-fN-WfR"/>
+                            <constraint firstItem="YMM-At-Fd5" firstAttribute="bottom" secondItem="0D8-Ir-Ee5" secondAttribute="bottom" constant="30" id="BXe-cC-lxQ"/>
+                            <constraint firstItem="YMM-At-Fd5" firstAttribute="trailing" secondItem="XTM-0U-lfg" secondAttribute="trailing" constant="30" id="FcK-uH-2Kx"/>
+                            <constraint firstItem="0D8-Ir-Ee5" firstAttribute="leading" secondItem="YMM-At-Fd5" secondAttribute="leading" constant="30" id="TYI-Zy-N5H"/>
+                            <constraint firstItem="0D8-Ir-Ee5" firstAttribute="top" secondItem="M5G-RQ-hXz" secondAttribute="bottom" constant="130" id="WlR-G1-NYu"/>
+                            <constraint firstItem="YMM-At-Fd5" firstAttribute="trailing" secondItem="0D8-Ir-Ee5" secondAttribute="trailing" constant="30" id="rmc-kW-wD9"/>
+                            <constraint firstItem="M5G-RQ-hXz" firstAttribute="top" secondItem="XTM-0U-lfg" secondAttribute="bottom" constant="30" id="uSm-r2-bFt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YMM-At-Fd5"/>
                     </view>

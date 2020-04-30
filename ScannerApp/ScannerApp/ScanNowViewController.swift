@@ -12,7 +12,6 @@ import Firebase
 
 class ScanNowViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, AVCapturePhotoCaptureDelegate, AVCaptureMetadataOutputObjectsDelegate {
      @IBOutlet weak var previewView: UIView!
-     @IBOutlet weak var lblOutput: UILabel!
     
     @IBAction func Scan(_ sender: Any) {
         self.codigo = code

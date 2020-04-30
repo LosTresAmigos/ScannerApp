@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tHu-z6-f0M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tHu-z6-f0M">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -296,10 +296,12 @@
                                     <segue destination="vWS-7f-hJx" kind="show" identifier="goSetUp" id="Tro-5s-ocX"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="qrcode" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xhd-EV-DKj">
-                                <rect key="frame" x="62" y="108" width="251" height="199"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="qrcode" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xhd-EV-DKj">
+                                <rect key="frame" x="30" y="78" width="315" height="207.5"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="baf-t4-QtI"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -310,9 +312,12 @@
                             <constraint firstItem="YMM-At-Fd5" firstAttribute="bottom" secondItem="0D8-Ir-Ee5" secondAttribute="bottom" constant="30" id="BXe-cC-lxQ"/>
                             <constraint firstItem="YMM-At-Fd5" firstAttribute="trailing" secondItem="XTM-0U-lfg" secondAttribute="trailing" constant="30" id="FcK-uH-2Kx"/>
                             <constraint firstItem="0D8-Ir-Ee5" firstAttribute="leading" secondItem="YMM-At-Fd5" secondAttribute="leading" constant="30" id="TYI-Zy-N5H"/>
+                            <constraint firstItem="YMM-At-Fd5" firstAttribute="trailing" secondItem="Xhd-EV-DKj" secondAttribute="trailing" constant="30" id="UfT-dg-917"/>
                             <constraint firstItem="0D8-Ir-Ee5" firstAttribute="top" secondItem="M5G-RQ-hXz" secondAttribute="bottom" constant="130" id="WlR-G1-NYu"/>
+                            <constraint firstItem="Xhd-EV-DKj" firstAttribute="leading" secondItem="YMM-At-Fd5" secondAttribute="leading" constant="30" id="b1o-Yw-U3x"/>
                             <constraint firstItem="YMM-At-Fd5" firstAttribute="trailing" secondItem="0D8-Ir-Ee5" secondAttribute="trailing" constant="30" id="rmc-kW-wD9"/>
                             <constraint firstItem="M5G-RQ-hXz" firstAttribute="top" secondItem="XTM-0U-lfg" secondAttribute="bottom" constant="30" id="uSm-r2-bFt"/>
+                            <constraint firstItem="XTM-0U-lfg" firstAttribute="top" secondItem="Xhd-EV-DKj" secondAttribute="bottom" constant="30" id="y8n-2t-4HP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YMM-At-Fd5"/>
                     </view>
@@ -356,7 +361,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYb-KC-Nck">
-                                <rect key="frame" x="24" y="248.5" width="327" height="311"/>
+                                <rect key="frame" x="24" y="248" width="327" height="311"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="313.5" id="yE1-Ur-FC8"/>
                                 </constraints>

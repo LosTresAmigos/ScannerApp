@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0O-iV-Wb6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0O-iV-Wb6">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -678,9 +678,9 @@
                                 <state key="normal" title="REMOVE"/>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uHg-NN-NNz">
-                                <rect key="frame" x="30" y="217" width="315" height="180"/>
+                                <rect key="frame" x="16" y="58" width="343" height="461"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="cJI-6O-vwQ"/>
+                                    <constraint firstAttribute="height" constant="461" id="cJI-6O-vwQ"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qW-5J-wjG">
@@ -696,20 +696,23 @@
                             <constraint firstItem="R3i-bT-DaY" firstAttribute="bottom" secondItem="s7l-rs-nya" secondAttribute="bottom" constant="30" id="4T6-G4-EiM"/>
                             <constraint firstAttribute="trailing" secondItem="s7l-rs-nya" secondAttribute="trailing" constant="30" id="5Hd-Zr-jab"/>
                             <constraint firstItem="s7l-rs-nya" firstAttribute="leading" secondItem="2MX-IT-Zeo" secondAttribute="leading" constant="30" id="Cu0-zo-KdP"/>
-                            <constraint firstItem="0qW-5J-wjG" firstAttribute="top" secondItem="uHg-NN-NNz" secondAttribute="bottom" constant="130" id="Ryl-Gu-kmE"/>
+                            <constraint firstItem="0qW-5J-wjG" firstAttribute="top" secondItem="uHg-NN-NNz" secondAttribute="bottom" constant="8" id="Ryl-Gu-kmE"/>
                             <constraint firstItem="R3i-bT-DaY" firstAttribute="trailing" secondItem="0qW-5J-wjG" secondAttribute="trailing" constant="30" id="Toa-Oy-ryQ"/>
-                            <constraint firstAttribute="trailing" secondItem="uHg-NN-NNz" secondAttribute="trailing" constant="30" id="dQe-KS-18B"/>
+                            <constraint firstAttribute="trailing" secondItem="uHg-NN-NNz" secondAttribute="trailing" constant="16" id="dQe-KS-18B"/>
                             <constraint firstItem="0qW-5J-wjG" firstAttribute="leading" secondItem="R3i-bT-DaY" secondAttribute="leading" constant="30" id="dkh-80-UUl"/>
-                            <constraint firstItem="uHg-NN-NNz" firstAttribute="leading" secondItem="2MX-IT-Zeo" secondAttribute="leading" constant="30" id="hK3-dh-K9p"/>
+                            <constraint firstItem="uHg-NN-NNz" firstAttribute="leading" secondItem="2MX-IT-Zeo" secondAttribute="leading" constant="16" id="hK3-dh-K9p"/>
                             <constraint firstItem="s7l-rs-nya" firstAttribute="top" secondItem="0qW-5J-wjG" secondAttribute="bottom" constant="30" id="qZJ-H7-dSa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R3i-bT-DaY"/>
                     </view>
                     <navigationItem key="navigationItem" id="RJm-uJ-ljo"/>
+                    <connections>
+                        <outlet property="previewView" destination="uHg-NN-NNz" id="Ld1-tN-dN1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="755-J8-58H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-351" y="1863"/>
+            <point key="canvasLocation" x="-351.19999999999999" y="1862.5187406296852"/>
         </scene>
         <!--Edit VIew Controller-->
         <scene sceneID="Slc-0P-Xxp">
@@ -991,13 +994,13 @@
             <point key="canvasLocation" x="2989.5999999999999" y="1671.8140929535234"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="person.circle" catalog="system" width="64" height="60"/>
-        <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="qrcode" catalog="system" width="64" height="56"/>
-        <image name="qrcode.viewfinder" catalog="system" width="64" height="56"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="1IZ-iF-DEm"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="qrcode" catalog="system" width="128" height="114"/>
+        <image name="qrcode.viewfinder" catalog="system" width="128" height="114"/>
+    </resources>
 </document>

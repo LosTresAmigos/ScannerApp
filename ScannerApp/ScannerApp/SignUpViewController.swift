@@ -37,7 +37,7 @@ class SignUpViewController: UIViewController {
         let db = Firestore.firestore()
         let userID = Auth.auth().currentUser!.uid
         
-        let newDocument = db.collection("user").document()
+        let newDocument = db.collection("user").document(userID)
         newDocument.setData(["First Name": firstName, "Last Name": lastName, "Primary Name": primaryName,"Primary Phone": primaryPhone, "Secondary Name": secondaryName,"Secondary Phone": secondaryPhone, "id":newDocument.documentID,"userID": userID  ])
                 
         performSegue(withIdentifier: "goProfile", sender: self)

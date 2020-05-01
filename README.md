@@ -102,49 +102,39 @@ my student ID and use it when needed
 ### Networking
 #### List of network requests by screen
    - Profile Screen
-      - (Read/GET) Query all information where key matches its author
-         ```swift
-         let query = PFQuery(className:"User")
-         query.whereKey("author", equalTo: currentUser)
-         query.findObjectsInBackground { (users: [PFObject]?, error: Error?) in
-            if let error = error { 
-               print(error.localizedDescription)
-            } else if let key = key {
-               print("Successfully retrieved \(users.count) users.")
-           // TODO: Do something with users...
-            }
-         }
-         ```
-      - (Create/POST) Create a new key for a user
-      ```swift
-            guard let key = ref.child("userId").childByAutoId().key else { return }
-                let post = ["qrCode": qrCode]
-                let childUpdates = ["/userId/\(key)": post,
-                                    "/user-userId/\(qrCode)/\(key)/": post]
-                ref.updateChildValues(childUpdates)
-        ```
-      - (Delete) Delete an existing key
-         ```swift
-            if 'key' in myDict:
-            del myDict['key']
-         ```
-      - (Update/PUT) Change information for a user
-         ```swift
-           var user = firebase.auth().currentUser;
+      - (Read/GET) Query all information where userID matches cureent userID
+         ```let userID = Auth.auth().currentUser!.uid
+                let db = Firestore.firestore()
+                let docRef = db.collection("user").document(userID)
+                docRef.getDocument() { (document, error) in
+                    if let document = document{
+                                   
+                        if document.exists {
+                            self.performSegue(withIdentifier: "goHome", sender: self)
+                        }
+                        else {
+                        //   self.performSegue(withIdentifier: "goHome", sender: self)
 
-            user.updateProfile({
-              displayName: "Jane Q. User",
-              photoURL: "https://example.com/jane-q-user/profile.jpg"
-            }).then(function() {
-              // Update successful.
-            }).catch(function(error) {
-              // An error happened.
-            });
+                        self.performSegue(withIdentifier: "goSetUp", sender: self)
+                                       }
+                                   }
+                            }
          ```
-      - (Delete) Delete existing information
-         ```swift
-            class func delete(with groupIdentifier: String, 
-            completion: ((Error?) -> Void)? = nil)
+      - (Create/POST) Create a new user
+      ```swift
+             let newDocument = db.collection("user").document(userID)
+        newDocument.setData(["First Name": firstName, "Last Name": lastName, "Primary Name": primaryName,"Primary Phone":             primaryPhone, "Secondary Name": secondaryName,"Secondary Phone": secondaryPhone, "id":newDocument.documentID,"userID": userID  ])
+        ```
+      - (Update/PUT) Chec
+         ```let docRef = db.collection("user").document(userID)
+             docRef.setData(["First Name":firstName,"Last Name": lastName,"Email": email], merge: true)
+         ```
+      - (Delete) Delete an existing QR Code
+         ``` let db = Firestore.firestore()
+        let userID = Auth.auth().currentUser!.uid
+        let docRef = db.collection("user").document(userID)
+        docRef.updateData([
+            "QRCode": FieldValue.arrayRemove([code])
          ```
 
 

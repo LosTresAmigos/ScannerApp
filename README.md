@@ -159,3 +159,15 @@ https://media.giphy.com/media/MZct1CLJ77HqBWhzNZ/giphy.gif
 ## Milestone 4 GIF
 
 ![Wireframe Final-1](https://media.giphy.com/media/W6Xh2ms7d8aalFy1pC/giphy.gif)
+
+## Walktrough GIFS
+
+### Scan Now/Sign In/ Add/Remove Keys
+![Scan Now/Sign In/ Add/Remove Keys](https://media.giphy.com/media/W6Xh2ms7d8aalFy1pC/giphy.gif)
+
+### Update Information Page https://media.giphy.com/media/LOEXdRGwvEVOn0M1nw/giphy.gif
+![Scan Now/Sign In/ Add/Remove Keys](https://media.giphy.com/media/LOEXdRGwvEVOn0M1nw/200w_d.gif)
+
+### Update Contact Information Page https://media.giphy.com/media/Td4CseYrHG12WMbrBl/giphy.gif
+![Update Contact Information Page](https://media.giphy.com/media/Td4CseYrHG12WMbrBl/200w_d.gif)
+
